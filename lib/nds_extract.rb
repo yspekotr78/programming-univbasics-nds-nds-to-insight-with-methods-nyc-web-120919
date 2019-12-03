@@ -10,8 +10,10 @@ def directors_totals(nds)
   name_index = 0
   while name_index < nds.length do
     director_name = nds[name_index]
-    result[director_name[:name]]=gross_for_director(director_name)
+    result[director_name[:name]] = gross_for_director(director_name)
     name_index += 1
+    puts "\t#{[director_name[:name]]} total: $#{result[director_name[:name]]}"
+    #puts result[director_name[:name]]
   end
  # puts result
  #pp nds
